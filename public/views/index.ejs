@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<link href="assets/style.css" type="text/css" rel="stylesheet" />
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js" ></script>
+		<script src="assets/views/script.js" ></script>
+		<title>噓！主上不在！</title>
+	</head>
+	<body>
+	<div id="up">
+		<img src="assets/views/css/background.jpg">
+		<div id="title">噓！主上不在！</div>
+			<div id="messages">
+		<% if (userinfos.length) { %>
+    		  <% userinfos.forEach(function(userinfo){ %>
+  		      <div id="picture"><img src="assets/views/css/<%= userinfo['name'] %>.jpg" ></div><br>
+            <div id="context"><%= userinfo['words'] %></div>
+  		    <% }) %>
+  		<% } %>
+		</div>
+	</div>
+	<div id="down">
+			<form method="POST" action="/person">
+				<img src="assets/views/css/1.jpg" >
+				<input type="radio" name="firstname" value="1"/>
+			 <img src="assets/views/css/2.jpg">
+				<input type="radio"  name="firstname" value="2"/>
+				<img src="assets/views/css/3.jpg">
+				<input type="radio" name="firstname" value="3"/>
+				<img src="assets/views/css/4.jpg">
+				<input type="radio" name="firstname" value="4"/>
+				<img  src="assets/views/css/5.jpg">
+				<input type="radio" name="firstname" value="5"/><br>
+				<img src="assets/views/css/6.jpg">
+				<input type="radio" name="firstname" value="6"/>
+				<img src="assets/views/css/7.jpeg">
+				<input type="radio"  name="firstname" value="7"/>
+				<img src="assets/views/css/8.jpg">
+				<input type="radio" name="firstname" value="8"/>
+				<img src="assets/views/css/9.jpg">
+				<input type="radio" name="firstname" value="9"/>
+				<img src="assets/views/css/10.jpg">
+				<input type="radio" name="firstname" value="10"/><br>
+				<input type="text" id="lastname" name="lastname" placeholder ="不管說了什麼都不能告訴主上喔☆"/><br />
+			<input type="image" src="assets/views/css/send.png" width="150" height="150" value="Send" />
+			</form>
+	</div>
+	<footer>
+			<div>Copyright©審神者</div>
+	</footer>
+	</body>
+</html>

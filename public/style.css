@@ -1,0 +1,83 @@
+body {
+	font-family: 微軟正黑體,Arial, Helvetica, sans-serif;
+	margin: 0;
+}
+
+form{
+	margin-top: 70px;
+	font-size: 30px;
+	color: #6B3911;
+	text-align: center;
+}
+#title{
+	text-align: center;
+	font-size: 48px;
+	position:relative;
+	top: 50px;
+}
+
+#down{
+	background-color: #C4D586;
+	position: absolute;
+	top: 900px;
+	width: 100%;
+
+}
+#down img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+#messages #picture, #context{
+	font-size: 30px;
+	color: #6B3911;
+	height: 100px;
+}
+#messages #picture{
+	float: left;
+	position:relative;
+}
+#messages #context{
+	background-color: #8ACA31;
+	border-radius: 10%;
+}
+#messages #picture img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position:relative;
+}
+#lastname{
+	margin-top: 50px;
+	height: 50px;
+	width: 300px;
+}
+
+#messages{
+	position:relative;
+	left: 25%;
+	top: 150px;
+	height: 600px;
+	width: 1000px;
+	overflow: scroll;
+
+}
+#up img{
+	width: 100%;
+	height: 900px;
+	position: absolute;
+}
+
+footer{
+	background-color: #38490F;
+	color: #CDE6CB;
+	height: 60px;
+	position: relative;
+	top: 800px;
+}
+footer div{
+	position: absolute;
+	top: 25px;
+	left: 45%;
+}
